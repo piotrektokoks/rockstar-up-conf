@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockstar Configs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e;
+            color: #eee;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #e94560;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #aaa;
+            font-size: 1.1rem;
+        }
+
+        .search-container {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        #search {
+            width: 100%;
+            max-width: 500px;
+            padding: 0.8rem 1.2rem;
+            border: 2px solid #16213e;
+            border-radius: 8px;
+            background-color: #16213e;
+            color: #eee;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        #search:focus {
+            outline: none;
+            border-color: #e94560;
+        }
+
+        #search::placeholder {
+            color: #666;
+        }
+
+        .configs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .config-card {
+            background-color: #16213e;
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .config-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.2);
+        }
+
+        .config-name {
+            font-size: 1.3rem;
+            color: #e94560;
+            margin-bottom: 0.5rem;
+        }
+
+        .config-description {
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .config-code {
+            display: inline-block;
+            background-color: #1a1a2e;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #e94560;
+            margin-bottom: 1rem;
+        }
+
+        .download-btn {
+            width: 100%;
+            padding: 0.7rem;
+            border: none;
+            border-radius: 6px;
+            background-color: #e94560;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .download-btn:hover {
+            background-color: #d63851;
+        }
+
+        .download-btn:active {
+            transform: scale(0.98);
+        }
+
+        .no-configs {
+            text-align: center;
+            color: #666;
+            font-size: 1.2rem;
+            padding: 3rem;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #16213e;
+            color: #e94560;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border: 2px solid #e94560;
+            font-weight: 600;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 1000;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .configs-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rockstar Configs</h1>
+            <p class="subtitle">Pobierz configy do Rockstar Client</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Szukaj configów...">
+        </div>
+
+        <div id="configs-container" class="configs-grid"></div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script>
+        let configsData = [];
+
+        async function loadConfigs() {
+            try {
+                const response = await fetch('configs.json');
+                const data = await response.json();
+                configsData = data.configs || [];
+                renderConfigs(configsData);
+            } catch (error) {
+                document.getElementById('configs-container').innerHTML =
+                    '<p class="no-configs">Nie udało się załadować configów</p>';
+            }
+        }
+
+        function renderConfigs(configs) {
+            const container = document.getElementById('configs-container');
+
+            if (configs.length === 0) {
+                container.innerHTML = '<p class="no-configs">Brak configów</p>';
+                return;
+            }
+
+            container.innerHTML = configs.map(config => `
+                <div class="config-card" data-name="${config.name.toLowerCase()}" data-code="${config.code.toLowerCase()}">
+                    <h3 class="config-name">${escapeHtml(config.name)}</h3>
+                    <p class="config-description">${escapeHtml(config.description)}</p>
+                    <span class="config-code">${escapeHtml(config.code)}</span>
+                    <button class="download-btn" onclick="downloadConfig('${escapeHtml(config.code)}')">Pobierz</button>
+                </div>
+            `).join('');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        async function downloadConfig(code) {
+            try {
+                const response = await fetch(`configs/${code}.json`);
+                if (!response.ok) throw new Error('Nie znaleziono configu');
+                const configJson = await response.json();
+                const jsonString = JSON.stringify(configJson, null, 2);
+
+                await navigator.clipboard.writeText(jsonString);
+                showToast('Skopiowano do schowka!');
+            } catch (error) {
+                showToast('Błąd pobierania configu');
+            }
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2500);
+        }
+
+        document.getElementById('search').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = configsData.filter(config =>
+                config.name.toLowerCase().includes(query) ||
+                config.code.toLowerCase().includes(query)
+            );
+            renderConfigs(filtered);
+        });
+
+        loadConfigs();
+    </script>
+</body>
+</html>
