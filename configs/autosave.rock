@@ -1,0 +1,1485 @@
+{
+  "modules": [
+    {
+      "name": "Aura",
+      "enabled": false,
+      "key": 82,
+      "settings": {
+        "modules.settings.aura.rotationMode": "modules.settings.aura.simpleRotation",
+        "modules.settings.aura.attackDistance": 3.0,
+        "modules.settings.aura.aimDistance": 3.0,
+        "only_crits": false,
+        "modules.settings.aura.walls": true,
+        "modules.settings.aura.rayTrace": true,
+        "modules.settings.aura.targeting": true,
+        "modules.settings.aura.onlyWeapon": false,
+        "targets": {
+          "selected": [
+            "players",
+            "animals",
+            "mobs",
+            "invisibles",
+            "nakedPlayers"
+          ],
+          "order": [
+            "players",
+            "animals",
+            "mobs",
+            "invisibles",
+            "nakedPlayers",
+            "friends"
+          ]
+        },
+        "sorting": "modules.settings.aura.distanceSorting",
+        "modules.settings.aura.moveCorrectionMode": "modules.settings.aura.silentMoveCorrection",
+        "modules.settings.aura.styleAttack": "1.9",
+        "modules.settings.aura.mode": {
+          "selected": [
+            "Normal"
+          ],
+          "order": [
+            "Normal",
+            "ThunderHack"
+          ]
+        },
+        "modules.settings.aura.smart_crit": false,
+        "modules.settings.aura.only_space": false,
+        "modules.settings.aura.auto_jump": false,
+        "modules.settings.aura.shield_breaker": false,
+        "modules.settings.aura.drop_sprint": false,
+        "modules.settings.aura.return_sprint": false,
+        "modules.settings.aura.pause_eating": false,
+        "modules.settings.aura.pause_inventory": true,
+        "modules.settings.aura.pull_down": false,
+        "modules.settings.aura.pull_value": 3.0,
+        "modules.settings.aura.attack_hand": "MainHand",
+        "modules.settings.aura.fov": 180.0,
+        "modules.settings.aura.client_look": false,
+        "modules.settings.aura.lock_target": true
+      }
+    },
+    {
+      "name": "Auto Totem",
+      "enabled": false,
+      "key": 39,
+      "settings": {
+        "modules.settings.auto_totem.health": 4.0
+      }
+    },
+    {
+      "name": "Trigger Bot",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "only_crits": true,
+        "targets": {
+          "selected": [
+            "players",
+            "animals",
+            "mobs",
+            "invisibles",
+            "nakedPlayers"
+          ],
+          "order": [
+            "players",
+            "animals",
+            "mobs",
+            "invisibles",
+            "nakedPlayers",
+            "friends"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Auto GApple",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_gapple.health": 7.0
+      }
+    },
+    {
+      "name": "Aim Bot",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "items": {
+          "selected": [
+            "bow"
+          ],
+          "order": [
+            "bow",
+            "crossbow",
+            "trident"
+          ]
+        },
+        "predict": false,
+        "silent_aim": false,
+        "distance": 30.0,
+        "fov": 90.0,
+        "targets": {
+          "selected": [
+            "players",
+            "animals",
+            "mobs",
+            "invisibles",
+            "nakedPlayers"
+          ],
+          "order": [
+            "players",
+            "animals",
+            "mobs",
+            "invisibles",
+            "nakedPlayers",
+            "friends"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Auto Potion",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_potion.potions": {
+          "selected": [
+            "modules.settings.auto_potion.potions.strength",
+            "modules.settings.auto_potion.potions.speed",
+            "modules.settings.auto_potion.potions.fire_resistance",
+            "modules.settings.auto_potion.potions.heal",
+            "modules.settings.auto_potion.potions.heal.cerka"
+          ],
+          "order": [
+            "modules.settings.auto_potion.potions.strength",
+            "modules.settings.auto_potion.potions.speed",
+            "modules.settings.auto_potion.potions.fire_resistance",
+            "modules.settings.auto_potion.potions.heal",
+            "modules.settings.auto_potion.potions.heal.cerka"
+          ]
+        },
+        "modules.settings.auto_potion.allow": {
+          "selected": [
+            "modules.settings.auto_potion.allow.throw_up",
+            "modules.settings.auto_potion.allow.throw_walls"
+          ],
+          "order": [
+            "modules.settings.auto_potion.allow.throw_up",
+            "modules.settings.auto_potion.allow.throw_walls",
+            "modules.settings.auto_potion.allow.donate"
+          ]
+        },
+        "modules.settings.auto_potion.potions.heal_health": 6.0,
+        "modules.settings.auto_potion.potions.cerka_health": 6.0
+      }
+    },
+    {
+      "name": "Anti Bot",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "Мод": "RW"
+      }
+    },
+    {
+      "name": "Velocity",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "mode": "modules.settings.velocity.modify",
+        "modules.settings.velocity.velocity_x": 0.0,
+        "modules.settings.velocity.velocity_y": 0.0,
+        "modules.settings.velocity.velocity_z": 0.0
+      }
+    },
+    {
+      "name": "Auto Armor",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "delay": 250.0
+      }
+    },
+    {
+      "name": "Auto Explosion",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_explosion.bind": -1,
+        "modules.settings.auto_explosion.attack_others": false,
+        "modules.settings.auto_explosion.self_save": false,
+        "modules.settings.auto_explosion.delay": 500.0
+      }
+    },
+    {
+      "name": "Back Track",
+      "enabled": false,
+      "key": 44,
+      "settings": {
+        "modules.settings.back_track.mode": "modules.settings.back_track.mode.ghost_box",
+        "modules.settings.back_track.ghost_box_alpha": 200.0,
+        "modules.settings.back_track.ghost_box_line": 3.0,
+        "modules.settings.back_track.model_alpha": 120.0,
+        "modules.settings.back_track.only_target": true,
+        "modules.settings.back_track.anti_cheat": "modules.settings.back_track.anti_cheat.grim",
+        "modules.settings.back_track.min_time": 340.0,
+        "modules.settings.back_track.max_time": 1020.0,
+        "modules.settings.back_track.remove_threshold": 800.0,
+        "modules.settings.back_track.smooth": true,
+        "modules.settings.back_track.predict": false,
+        "modules.settings.back_track.predict_amount": 1.2,
+        "modules.settings.back_track.min_positions": 3.0,
+        "modules.settings.back_track.pull": false,
+        "modules.settings.back_track.pull_blocks": 5.0,
+        "modules.settings.back_track.trail": true,
+        "modules.settings.back_track.trail_alpha": 60.0,
+        "modules.settings.back_track.pulse_speed": 5.0,
+        "modules.settings.back_track.pulse_intensity": 150.0
+      }
+    },
+    {
+      "name": "Mace Swap",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "modules.settings.mace_swap.fall_distance": 1.0,
+        "modules.settings.mace_swap.switch_back_delay": 150.0,
+        "modules.settings.mace_swap.switch_back": true
+      }
+    },
+    {
+      "name": "Mace Trigger",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.mace_trigger.fall_distance": 1.5,
+        "modules.settings.mace_trigger.range": 3.7,
+        "modules.settings.mace_trigger.only_players": true
+      }
+    },
+    {
+      "name": "Shield Breaker",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "modules.settings.shield_breaker.range": 3.5,
+        "modules.settings.shield_breaker.swap_delay": 0.0
+      }
+    },
+    {
+      "name": "Totem Pop Notifier",
+      "enabled": true,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Anti Weakness",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.anti_weakness.swap_delay": 0.0
+      }
+    },
+    {
+      "name": "Hitboxes",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "size": 0.3,
+        "targets": {
+          "selected": [
+            "players",
+            "animals",
+            "mobs",
+            "invisibles",
+            "nakedPlayers"
+          ],
+          "order": [
+            "players",
+            "animals",
+            "mobs",
+            "invisibles",
+            "nakedPlayers",
+            "friends"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Elytra Target",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.elytra_target.fireworkSlot": 7.0,
+        "modules.settings.elytra_target.swapVector": true,
+        "modules.settings.elytra_target.defensive": true
+      }
+    },
+    {
+      "name": "Auto Web",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_web.range": 3.5,
+        "modules.settings.auto_web.delay": 150.0,
+        "modules.settings.auto_web.height": "modules.settings.auto_web.height.feet"
+      }
+    },
+    {
+      "name": "Fast Bow",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.fast_bow.charge": 20.0
+      }
+    },
+    {
+      "name": "Criticals",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Auto Soup",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "health": 10.0
+      }
+    },
+    {
+      "name": "Bow Spam",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.bow_spam.cps": 12.0
+      }
+    },
+    {
+      "name": "Auto Sprint",
+      "enabled": true,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Wind Hop",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.wind_hop.autoJump": true,
+        "modules.settings.wind_hop.swingArm": true,
+        "modules.settings.wind_hop.predictJump": true
+      }
+    },
+    {
+      "name": "No Web",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Flight",
+      "enabled": false,
+      "key": 322,
+      "settings": {
+        "modules.settings.flight.mode": "modules.settings.flight.vanilla",
+        "modules.settings.flight.speed": 1.0
+      }
+    },
+    {
+      "name": "Speed",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.speed.mode": "modules.settings.speed.vanilla"
+      }
+    },
+    {
+      "name": "Timer",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.timer.speed": 1.0
+      }
+    },
+    {
+      "name": "No Slow",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.no_slow.speed": 100.0
+      }
+    },
+    {
+      "name": "Spider",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Eagle",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Auto Walk",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Jesus",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Elytra Strafe",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.elytra_target.fireworkSlot": 7.0,
+        "modules.settings.elytra_target.fireworkDelay": 1.0,
+        "modules.settings.elytra_strafe.autoTakeoff": true
+      }
+    },
+    {
+      "name": "Menu",
+      "enabled": false,
+      "key": 344,
+      "settings": {
+        "modules.settings.menu.mode": "modules.settings.menu.mode.dropdown"
+      }
+    },
+    {
+      "name": "Name Tags",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "modules.settings.name_tags.armor": false,
+        "modules.settings.name_tags.offFriends": false,
+        "modules.settings.name_tags.items": false,
+        "modules.settings.name_tags.background": false
+      }
+    },
+    {
+      "name": "Removals",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "modules.settings.removals.effects": {
+          "selected": [
+            "modules.settings.removals.hurtCam",
+            "modules.settings.removals.portal",
+            "modules.settings.removals.fire",
+            "modules.settings.removals.clip",
+            "modules.settings.removals.nausea",
+            "modules.settings.removals.fov"
+          ],
+          "order": [
+            "modules.settings.removals.hurtCam",
+            "modules.settings.removals.scoreboard",
+            "modules.settings.removals.bossBar",
+            "modules.settings.removals.portal",
+            "modules.settings.removals.fire",
+            "modules.settings.removals.clip",
+            "modules.settings.removals.breakParticles",
+            "modules.settings.removals.water",
+            "modules.settings.removals.nausea",
+            "modules.settings.removals.blindness",
+            "modules.settings.removals.pumpkin",
+            "modules.settings.removals.fov",
+            "modules.settings.removals.weather"
+          ]
+        },
+        "modules.settings.removals.sounds": {
+          "selected": [],
+          "order": [
+            "modules.settings.removals.beacon",
+            "modules.settings.removals.phantoms",
+            "modules.settings.removals.weatherSound"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ambience",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.ambience.end_sky": false,
+        "modules.settings.ambience.custom_time": false,
+        "modules.settings.ambience.time": 12000.0,
+        "modules.settings.ambience.bright": true
+      }
+    },
+    {
+      "name": "Swing Animation",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "swing.only_aura": false,
+        "swing.open_menu": "сука как сделать так чтобы для него не было кфг"
+      }
+    },
+    {
+      "name": "Sound ESP",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "Отображать": {
+          "selected": [
+            "Трезубец"
+          ],
+          "order": [
+            "Трезубец",
+            "Динамит",
+            "Фейерверки"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Friend Markers",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "modules.settings.friends_markers.setting": "modules.settings.friends_markers.heads"
+      }
+    },
+    {
+      "name": "Arrows",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "lines": false,
+        "modules.settings.tracers.targets": {
+          "selected": [
+            "modules.settings.tracers.targets.players",
+            "modules.settings.tracers.targets.invisibles",
+            "modules.settings.tracers.targets.naked_players",
+            "modules.settings.tracers.targets.friends"
+          ],
+          "order": [
+            "modules.settings.tracers.targets.players",
+            "modules.settings.tracers.targets.animals",
+            "modules.settings.tracers.targets.mobs",
+            "modules.settings.tracers.targets.invisibles",
+            "modules.settings.tracers.targets.naked_players",
+            "modules.settings.tracers.targets.friends"
+          ]
+        }
+      }
+    },
+    {
+      "name": "TNT Timer",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "View Model",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "modules.settings.view_model.main_translate_x": 0.25,
+        "modules.settings.view_model.main_translate_y": -1.1,
+        "modules.settings.view_model.main_translate_z": -0.75,
+        "modules.settings.view_model.main_rotate_x": 11.0,
+        "modules.settings.view_model.main_rotate_y": -19.0,
+        "modules.settings.view_model.main_rotate_z": 82.0,
+        "modules.settings.view_model.off_translate_x": -0.1,
+        "modules.settings.view_model.off_translate_y": 0.0,
+        "modules.settings.view_model.off_translate_z": 0.0,
+        "modules.settings.view_model.off_rotate_x": 0.0,
+        "modules.settings.view_model.off_rotate_y": 0.0,
+        "modules.settings.view_model.off_rotate_z": 0.0
+      }
+    },
+    {
+      "name": "Trap ESP",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Blink",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.blink.pulse": false,
+        "modules.settings.blink.time": 12.0,
+        "modules.settings.blink.display": false,
+        "modules.settings.blink.hide_first_person": false
+      }
+    },
+    {
+      "name": "Interface",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "modules.settings.interface.mode": "modules.settings.interface.liquidGlass",
+        "modules.settings.interface.theme": "modules.settings.interface.dark",
+        "modules.settings.interface.language": "Русский"
+      }
+    },
+    {
+      "name": "Target ESP",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "modules.settings.target_esp.mode": "modules.settings.target_esp.mode.souls",
+        "color": {
+          "r": 255.0,
+          "g": 71.0,
+          "b": 71.0,
+          "a": 255.0
+        }
+      }
+    },
+    {
+      "name": "Storage ESP",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.storage_esp.blocks": {
+          "selected": [
+            "modules.settings.storage_esp.blocks.chests",
+            "modules.settings.storage_esp.blocks.ender_chests",
+            "modules.settings.storage_esp.blocks.barrels",
+            "modules.settings.storage_esp.blocks.minecart",
+            "modules.settings.storage_esp.blocks.shulkers"
+          ],
+          "order": [
+            "modules.settings.storage_esp.blocks.chests",
+            "modules.settings.storage_esp.blocks.ender_chests",
+            "modules.settings.storage_esp.blocks.trapped_chests",
+            "modules.settings.storage_esp.blocks.furnaces",
+            "modules.settings.storage_esp.blocks.barrels",
+            "modules.settings.storage_esp.blocks.minecart",
+            "modules.settings.storage_esp.blocks.shulkers",
+            "modules.settings.storage_esp.blocks.droppers",
+            "modules.settings.storage_esp.blocks.dispensers",
+            "modules.settings.storage_esp.blocks.hoppers"
+          ]
+        },
+        "modules.settings.storage_esp.render": {
+          "selected": [
+            "modules.settings.storage_esp.render.fill",
+            "modules.settings.storage_esp.render.outline",
+            "modules.settings.storage_esp.render.diagonals"
+          ],
+          "order": [
+            "modules.settings.storage_esp.render.fill",
+            "modules.settings.storage_esp.render.outline",
+            "modules.settings.storage_esp.render.diagonals",
+            "modules.settings.storage_esp.render.lines"
+          ]
+        },
+        "modules.settings.storage_esp.max_distance": 128.0
+      }
+    },
+    {
+      "name": "XRay",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Руды": {
+          "selected": [
+            "Алмазная руда",
+            "Железная руда",
+            "Золотая руда",
+            "Обломки",
+            "Лазуритовая руда"
+          ],
+          "order": [
+            "Алмазная руда",
+            "Железная руда",
+            "Золотая руда",
+            "Обломки",
+            "Лазуритовая руда"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Anti Invisible",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.anti_invisible.opacity": 50.0
+      }
+    },
+    {
+      "name": "Custom Fog",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.custom_fog.distance": {
+          "first": 10.0,
+          "second": 50.0
+        },
+        "modules.settings.custom_fog.color": {
+          "r": 151.0,
+          "g": 71.0,
+          "b": 255.0,
+          "a": 255.0
+        }
+      }
+    },
+    {
+      "name": "World",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "color": {
+          "r": 151.0,
+          "g": 71.0,
+          "b": 255.0,
+          "a": 255.0
+        }
+      }
+    },
+    {
+      "name": "Kill Effects",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.kill_effects.color": {
+          "r": 151.0,
+          "g": 71.0,
+          "b": 255.0,
+          "a": 255.0
+        }
+      }
+    },
+    {
+      "name": "HUD",
+      "enabled": true,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Jump Circle",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "modules.settings.jump_circle.on_jump": true,
+        "modules.settings.jump_circle.on_walk": true,
+        "modules.settings.jump_circle.on_land": true,
+        "modules.settings.jump_circle.walk_interval": 7.0,
+        "modules.settings.jump_circle.maxRadius": 1.4,
+        "modules.settings.jump_circle.color": {
+          "r": 151.0,
+          "g": 71.0,
+          "b": 255.0,
+          "a": 255.0
+        }
+      }
+    },
+    {
+      "name": "Prediction",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.prediction.entities": {
+          "selected": [
+            "modules.settings.prediction.entities.pearls",
+            "modules.settings.prediction.entities.tridents",
+            "modules.settings.prediction.entities.snowballs",
+            "modules.settings.prediction.entities.arrows",
+            "modules.settings.prediction.entities.potions"
+          ],
+          "order": [
+            "modules.settings.prediction.entities.pearls",
+            "modules.settings.prediction.entities.tridents",
+            "modules.settings.prediction.entities.snowballs",
+            "modules.settings.prediction.entities.arrows",
+            "modules.settings.prediction.entities.potions",
+            "modules.settings.prediction.entities.items"
+          ]
+        },
+        "modules.settings.prediction.render_mode": "modules.settings.prediction.render_mode.glow",
+        "modules.settings.prediction.hand": true,
+        "modules.settings.prediction.walls": true,
+        "modules.settings.prediction.hud": false
+      }
+    },
+    {
+      "name": "Inventory Cleaner",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Auto Invisible",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Пить заранее": false
+      }
+    },
+    {
+      "name": "Mine Helper",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Сохранять кирку": true,
+        "Прочность": 10.0,
+        "Авто замена": false,
+        "Авто починка": false,
+        "Кнопка починки": -1
+      }
+    },
+    {
+      "name": "Target Pearl",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Stealer",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.stealer.delay": 0.6,
+        "modules.settings.stealer.close": true,
+        "modules.settings.stealer.off": true,
+        "modules.settings.stealer.open_mystic": true,
+        "modules.settings.stealer.mode": "modules.settings.stealer.mode.up"
+      }
+    },
+    {
+      "name": "Middle Click",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Действие": {
+          "selected": [
+            "Бросать жемчуг"
+          ],
+          "order": [
+            "Бросать жемчуг",
+            "Добавлять друзей"
+          ]
+        },
+        "Клавиша друзей": -1,
+        "Клавиша перла": -1
+      }
+    },
+    {
+      "name": "Auto Brew",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Варить": "Зелье силы",
+        "Задержка": 100.0
+      }
+    },
+    {
+      "name": "Auto Farm",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_farm.mode": "modules.settings.auto_farm.mode.carrot",
+        "modules.settings.auto_farm.mine_blocks": false,
+        "modules.settings.auto_farm.blocks": {
+          "selected": [],
+          "order": [
+            "modules.settings.auto_farm.blocks.melon",
+            "modules.settings.auto_farm.blocks.pumpkin",
+            "modules.settings.auto_farm.blocks.other_crops"
+          ]
+        },
+        "modules.settings.auto_farm.auto_exp": true,
+        "modules.settings.auto_farm.auto_sell": true
+      }
+    },
+    {
+      "name": "Inventory Utils",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "targets": {
+          "selected": [
+            "Item Scroller",
+            "Slot Lock"
+          ],
+          "order": [
+            "Item Scroller",
+            "Slot Lock"
+          ]
+        },
+        "modules.settings.slot_lock.lock": {
+          "selected": [
+            "modules.settings.slot_lock.lock.slot1"
+          ],
+          "order": [
+            "modules.settings.slot_lock.lock.slot1",
+            "modules.settings.slot_lock.lock.slot2",
+            "modules.settings.slot_lock.lock.slot3",
+            "modules.settings.slot_lock.lock.slot4",
+            "modules.settings.slot_lock.lock.slot5",
+            "modules.settings.slot_lock.lock.slot6",
+            "modules.settings.slot_lock.lock.slot7",
+            "modules.settings.slot_lock.lock.slot8",
+            "modules.settings.slot_lock.lock.slot9"
+          ]
+        },
+        "delay": 0.0
+      }
+    },
+    {
+      "name": "Auto Eat",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_eat.food": 15.0
+      }
+    },
+    {
+      "name": "Free Camera",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Скорость": 3.0,
+        "Отображать координаты": false
+      }
+    },
+    {
+      "name": "Fast Break",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.fast_break.multiplier": 2.0
+      }
+    },
+    {
+      "name": "No Delay",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.no_delay.jump": true,
+        "modules.settings.no_delay.right_click": false
+      }
+    },
+    {
+      "name": "Player Utils",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Anti AFK": false,
+        "Auto Respawn": false,
+        "Auto Fish": false,
+        "Fast Ladder": false,
+        "Не бить друзей": false,
+        "Режимы": "Писать в чат",
+        "Задержка": 50.0
+      }
+    },
+    {
+      "name": "Anti AFK",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.anti_afk.mode": "modules.settings.anti_afk.mode.swing",
+        "modules.settings.anti_afk.delay": 5.0,
+        "modules.settings.anti_afk.inactive_time": 10.0,
+        "modules.settings.anti_afk.random_delay": false
+      }
+    },
+    {
+      "name": "Auto Tool",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_tool.silk_touch": false,
+        "modules.settings.auto_tool.switch_back": false,
+        "modules.settings.auto_tool.only_mining": true
+      }
+    },
+    {
+      "name": "Auto Log",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_log.health": 4.0,
+        "modules.settings.auto_log.delay": 0.0
+      }
+    },
+    {
+      "name": "Auto Reconnect",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_reconnect.delay": 2000.0
+      }
+    },
+    {
+      "name": "Auto Respawn",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Auto Shift",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_shift.range": 3.0,
+        "modules.settings.auto_shift.only_when_targeted": false
+      }
+    },
+    {
+      "name": "Auto Fish",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_fish.delay": 100.0
+      }
+    },
+    {
+      "name": "Fast Place",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.fast_place.speed": 4.0
+      }
+    },
+    {
+      "name": "Anti Hunger",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "No Push",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Отключать для": {
+          "selected": [
+            "Энтити",
+            "Блоков"
+          ],
+          "order": [
+            "Энтити",
+            "Воды и лавы",
+            "Блоков"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Item Pickup",
+      "enabled": true,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Scaffold",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Object Info",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Creeper Farm",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Nuker",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Дистанция XZ": 4.0,
+        "Дистанция Y": 5.0
+      }
+    },
+    {
+      "name": "No Rotate",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "No Interact",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.no_interact.blocks": {
+          "selected": [
+            "modules.settings.no_interact.craftingTables",
+            "modules.settings.no_interact.enchantingTables",
+            "modules.settings.no_interact.beds",
+            "modules.settings.no_interact.chests",
+            "modules.settings.no_interact.enderChests",
+            "modules.settings.no_interact.trappedChests",
+            "modules.settings.no_interact.furnaces",
+            "modules.settings.no_interact.barrels",
+            "modules.settings.no_interact.shulkers",
+            "modules.settings.no_interact.droppers",
+            "modules.settings.no_interact.dispensers",
+            "modules.settings.no_interact.hoppers",
+            "modules.settings.no_interact.anvils",
+            "modules.settings.no_interact.cauldrons",
+            "modules.settings.no_interact.signs",
+            "modules.settings.no_interact.bells",
+            "modules.settings.no_interact.composters",
+            "modules.settings.no_interact.brewingStands",
+            "modules.settings.no_interact.jukeBoxes",
+            "modules.settings.no_interact.commandBlocks",
+            "modules.settings.no_interact.beacons",
+            "modules.settings.no_interact.respawnAnchors",
+            "modules.settings.no_interact.grindstones",
+            "modules.settings.no_interact.lecterns",
+            "modules.settings.no_interact.cartographyTables",
+            "modules.settings.no_interact.looms",
+            "modules.settings.no_interact.smithingTables",
+            "modules.settings.no_interact.stonecutter"
+          ],
+          "order": [
+            "modules.settings.no_interact.craftingTables",
+            "modules.settings.no_interact.enchantingTables",
+            "modules.settings.no_interact.beds",
+            "modules.settings.no_interact.chests",
+            "modules.settings.no_interact.enderChests",
+            "modules.settings.no_interact.trappedChests",
+            "modules.settings.no_interact.furnaces",
+            "modules.settings.no_interact.barrels",
+            "modules.settings.no_interact.shulkers",
+            "modules.settings.no_interact.droppers",
+            "modules.settings.no_interact.dispensers",
+            "modules.settings.no_interact.hoppers",
+            "modules.settings.no_interact.anvils",
+            "modules.settings.no_interact.cauldrons",
+            "modules.settings.no_interact.signs",
+            "modules.settings.no_interact.bells",
+            "modules.settings.no_interact.composters",
+            "modules.settings.no_interact.brewingStands",
+            "modules.settings.no_interact.jukeBoxes",
+            "modules.settings.no_interact.commandBlocks",
+            "modules.settings.no_interact.beacons",
+            "modules.settings.no_interact.respawnAnchors",
+            "modules.settings.no_interact.grindstones",
+            "modules.settings.no_interact.lecterns",
+            "modules.settings.no_interact.cartographyTables",
+            "modules.settings.no_interact.looms",
+            "modules.settings.no_interact.smithingTables",
+            "modules.settings.no_interact.stonecutter"
+          ]
+        },
+        "modules.settings.no_interact.onlyAura": false
+      }
+    },
+    {
+      "name": "No Fall",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Effect Remover",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.effect_remover.remove": {
+          "selected": [
+            "modules.settings.effect_remover.remove.levitation",
+            "modules.settings.effect_remover.remove.jump_boost",
+            "modules.settings.effect_remover.remove.slow_fall"
+          ],
+          "order": [
+            "modules.settings.effect_remover.remove.levitation",
+            "modules.settings.effect_remover.remove.jump_boost",
+            "modules.settings.effect_remover.remove.slow_fall"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Name Protect",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.name_protect.fake_name": "Player"
+      }
+    },
+    {
+      "name": "Elytra Utils",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Клавиша свапа": -1,
+        "Клавиша фейерверка": -1,
+        "Авто взлёт": true,
+        "Авто использование": true,
+        "Грудак на земле": true,
+        "Ускорять": false
+      }
+    },
+    {
+      "name": "Counter Mine",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "ModerDetect": false,
+        "WallHack": false,
+        "No F5": false,
+        "HideSmoke": false,
+        "HideScope": false,
+        "Pick Assist": -1,
+        "MinDamage": -1,
+        "Aim": false,
+        "Rage": false,
+        "Silent": false,
+        "AutoShoot": false,
+        "AutoStop": false,
+        "Shoot Delay": 1000.0,
+        "AntAim": false,
+        "AA Mode": "Static",
+        "AA FreeStand": false
+      }
+    },
+    {
+      "name": "Fast Item Use",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.fast_item_use.bow": true,
+        "modules.settings.fast_item_use.trident": true,
+        "modules.settings.fast_item_use.crossbow": true
+      }
+    },
+    {
+      "name": "Auto Resell",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Panic",
+      "enabled": false,
+      "key": -1,
+      "settings": {}
+    },
+    {
+      "name": "Auction",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auction.armor": {
+          "selected": [
+            "modules.settings.auction.armor.no_spike",
+            "modules.settings.auction.armor.no_prot5"
+          ],
+          "order": [
+            "modules.settings.auction.armor.no_spike",
+            "modules.settings.auction.armor.no_prot5",
+            "modules.settings.auction.armor.no_durability",
+            "modules.settings.auction.armor.no_repair"
+          ]
+        },
+        "modules.settings.auction.pickaxe": {
+          "selected": [],
+          "order": [
+            "modules.settings.auction.pickaxe.silk_touch"
+          ]
+        },
+        "modules.settings.auction.potions": {
+          "selected": [],
+          "order": [
+            "modules.settings.auction.potions.no_level3",
+            "modules.settings.auction.potions.no_combined"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Auto Accept",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Принимать": "Всех"
+      }
+    },
+    {
+      "name": "Death Cords",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Ставить метку": false
+      }
+    },
+    {
+      "name": "Auto Leave",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_leave.leave": "modules.settings.auto_leave.leave.distance",
+        "modules.settings.auto_leave.distance": 30.0,
+        "modules.settings.auto_leave.health": 10.0,
+        "modules.settings.auto_leave.delay": 40.0,
+        "modules.settings.auto_leave.mode": "modules.settings.auto_leave.mode.hub"
+      }
+    },
+    {
+      "name": "Auto Swap",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.auto_swap.button": -1,
+        "modules.settings.auto_swap.item": "modules.settings.auto_swap.item.talisman",
+        "modules.settings.auto_swap.swap_to": "modules.settings.auto_swap.swap_to.talisman"
+      }
+    },
+    {
+      "name": "Russian Roulette",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Сложность": "Легкая"
+      }
+    },
+    {
+      "name": "Auto Duels",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Предпочитать": "Софтеров",
+        "Кит": "Щит"
+      }
+    },
+    {
+      "name": "Auto Auth",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Рандом": false,
+        "Пароль": "123123"
+      }
+    },
+    {
+      "name": "Auto Join",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Режим": "Дуэли SpookyTime"
+      }
+    },
+    {
+      "name": "Gui Move",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "Режим": "Автоматический",
+        "В контейнерах": "Стоять",
+        "Отменять закрытие": true,
+        "Учитывать прыжок": false,
+        "Обход": "Замедление",
+        "Без обхода на земле": false,
+        "Задержка": 100.0
+      }
+    },
+    {
+      "name": "Assist",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Спуф рп": false,
+        "Закрывать меню": true,
+        "Автопочинка": false,
+        "Поломка брони": false,
+        "Драгон флай": true,
+        "Ускорять по XZ": 5.0,
+        "Ускорять по Y": 5.0,
+        "Авто пиона": true,
+        "Дезориентация": -1,
+        "Трапка": -1,
+        "Огненный смерч": -1,
+        "Пласт": -1,
+        "Божья аура": -1,
+        "Явная пыль": -1,
+        "Авто /zako": false,
+        "Авто-стоп": false,
+        "Стан": -1,
+        "Ком снега": -1,
+        "Взрывная штучка": -1,
+        "Взрывная трапка": -1,
+        "Прощальный гул": -1,
+        "Рюкзак": -1
+      }
+    },
+    {
+      "name": "Sounds",
+      "enabled": true,
+      "key": -1,
+      "settings": {
+        "Громкость звука": 1.0
+      }
+    },
+    {
+      "name": "Fake Lag",
+      "enabled": false,
+      "key": 333,
+      "settings": {
+        "modules.settings.fake_lag.mode": {
+          "selected": [
+            "modules.settings.fake_lag.mode.ping_spoof",
+            "modules.settings.fake_lag.mode.normal"
+          ],
+          "order": [
+            "modules.settings.fake_lag.mode.ping_spoof",
+            "modules.settings.fake_lag.mode.normal",
+            "modules.settings.fake_lag.mode.random",
+            "modules.settings.fake_lag.mode.smooth"
+          ]
+        },
+        "modules.settings.fake_lag.ping_delay": 940.0,
+        "modules.settings.fake_lag.ping_jitter": 70.0,
+        "modules.settings.fake_lag.normal_max_packets": 20.0,
+        "modules.settings.fake_lag.normal_flush_delay": 500.0,
+        "modules.settings.fake_lag.random_min_delay": 100.0,
+        "modules.settings.fake_lag.random_max_delay": 800.0,
+        "modules.settings.fake_lag.smooth_delay": 500.0,
+        "modules.settings.fake_lag.display": true
+      }
+    },
+    {
+      "name": "Fake Player",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.fake_player.range": 2.0
+      }
+    },
+    {
+      "name": "Chest Aura",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "modules.settings.chest_aura.range": 4.5,
+        "modules.settings.chest_aura.delay": 300.0
+      }
+    },
+    {
+      "name": "Test",
+      "enabled": false,
+      "key": -1,
+      "settings": {
+        "Name": {
+          "first": 3.0,
+          "second": 6.0
+        }
+      }
+    }
+  ]
+}
